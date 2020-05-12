@@ -8,7 +8,7 @@ PID::PID() {}
 
 PID::~PID() {}
 
-void PID::Init(double Kp_, double Ki_, double Kd_) {
+void PID::Init(double Kp, double Ki, double Kd) {
     // Initialize errors
     p_error = 0;
     i_error = 0;
@@ -17,8 +17,8 @@ void PID::Init(double Kp_, double Ki_, double Kd_) {
 
 void PID::UpdateError(double cte) {
     double prev_cte = 0;
-    prev_cte = p_error;
     
+    prev_cte = p_error;
     p_error = cte;
     i_error += cte;
     d_error = cte - prev_cte;
