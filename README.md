@@ -2,8 +2,26 @@
 Self-Driving Car Engineer Nanodegree Program
 
 ---
+## Introduction
 
-## Dependencies
+<p align="center">
+  <img src="./PID gif.gif">
+</p>
+
+The purpose of this project is to "build PID (Proportional Intergral Differential) controller and tune the parameters by applying general proccessing flow as described in the lesson and test solution on the simulator." Simulator feedback the cross-track error (CTE), speed and steering angel data. The controller responds with steering commands to drive the car around the simulator track.
+
+## Effect of each P, I and D components
+* P gain: P gain is directly proportional to control input. If P gain is too large it causes overshoot/oscillation. 
+* I gain: I gain reduces historical error.
+* D gain: D gain mitigate the oscillation. If the control value is large, D gain generates counter steer to stabilize the output.
+
+## Hyperparameters tuning
+* Hyperparameters were tuned manually.
+* P gain and I gain were tuned simultaneously and once we get faily good results, I gain were introduced and tuned.
+
+## Udacity README
+
+### Dependencies
 
 * cmake >= 3.5
  * All OSes: [click here for installation instructions](https://cmake.org/install/)
