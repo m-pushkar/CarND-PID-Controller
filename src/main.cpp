@@ -41,8 +41,8 @@ int main() {
    */
     
     pid.Kp = 0.13;
-    pid.Kd = 1.2;
-    pid.Ki = 0.0001;
+    pid.Kd = 3;
+    pid.Ki = 0.000025;
 
   h.onMessage([&pid](uWS::WebSocket<uWS::SERVER> ws, char *data, size_t length, 
                      uWS::OpCode opCode) {
