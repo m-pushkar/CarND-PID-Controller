@@ -19,9 +19,9 @@ The purpose of this project is to "build PID (Proportional Intergral Differentia
 * Hyperparameters were tuned manually.
 * P gain and I gain were tuned simultaneously and once we get faily good results, I gain were introduced and tuned.
 
-## Udacity README
+# Udacity README
 
-### Dependencies
+## Dependencies
 
 * cmake >= 3.5
  * All OSes: [click here for installation instructions](https://cmake.org/install/)
